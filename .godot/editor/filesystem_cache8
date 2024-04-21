@@ -1,7 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713658767
+::res://::1713707261
 icon.svg::CompressedTexture2D::3542668989048734183::1713637118::1713637124::1::::<><>::
-::res://Prefabs/::1713658934
-player.tscn::PackedScene::6061864595801211988::1713658934::0::1::::<><>::res://Scripts/Player.gd
-::res://Scripts/::1713658925
-Player.gd::GDScript::-1::1713658925::0::1::::<>Node3D<>::
+::res://Levels/::1713706164
+level1.tscn::PackedScene::9079209391567766514::1713706164::0::1::::<><>::uid://csmoa3a4iv2qa::::res://Prefabs/player.tscn
+::res://Prefabs/::1713706164
+player.tscn::PackedScene::6061864595801211988::1713706164::0::1::::<><>::res://Scripts/Player.gd
+::res://Scripts/::1713706399
+Player.gd::GDScript::-1::1713706399::0::1::::<>RigidBody3D<>::

@@ -1,7 +1,7 @@
 extends RigidBody3D
 
-var thrustSpeed: int = 2
-var turnSpeed: int = 1
+@export var thrustSpeed: int = 2
+@export var turnSpeed: int = 1
 var forceMult: float = 1000.0
 var torqueMult: float = 100.0
 
@@ -14,14 +14,18 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	
 	# thrust logic
-	if Input.is_action_pressed("ui_accept"):
+	if Input.is_action_pressed("boost"):
 		apply_central_force(basis.y * thrustSpeed * forceMult * delta)
 		
 	# turn left logic
-	if Input.is_action_pressed("ui_left"):
+	if Input.is_action_pressed("rotate_left"):
 		apply_torque(Vector3(0.0, 0.0, turnSpeed * torqueMult * delta))
 		
 	#turn right logic
-	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("rotate_right"):
 		apply_torque(Vector3(0.0, 0.0, -turnSpeed * torqueMult * delta))
 
+
+
+func _on_body_entered(body: Node) -> void:
+	pass # Replace with function body.
