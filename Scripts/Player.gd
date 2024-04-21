@@ -7,7 +7,7 @@ var torqueMult: float = 100.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -28,4 +28,12 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node) -> void:
-	pass # Replace with function body.
+	
+	#checking for goal collision
+	if "goal" in body.get_groups():
+		print("You wind!")
+		
+	# checking for hazard collision
+	if "hazard" in body.get_groups():
+		print("You lose :(")
+		
