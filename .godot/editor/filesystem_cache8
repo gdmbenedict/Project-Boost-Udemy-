@@ -1,5 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713643735
+::res://::1713658767
 icon.svg::CompressedTexture2D::3542668989048734183::1713637118::1713637124::1::::<><>::
-::res://Scripts/::1713643735
-Player.gd::GDScript::-1::1713641771::0::1::::<>Node3D<>::
+::res://Prefabs/::1713658934
+player.tscn::PackedScene::6061864595801211988::1713658934::0::1::::<><>::res://Scripts/Player.gd
+::res://Scripts/::1713658925
+Player.gd::GDScript::-1::1713658925::0::1::::<>Node3D<>::
